@@ -1,9 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import DefaultLayout from '../layouts/DefaultLayout';
 
 
 const Home = () => {
+
+  const galleryImages = [
+    "/assets/images/carlo-mother.jpg",
+    "/assets/images/img-2260_1.jpeg",
+    "/assets/images/dsc-0108_1.jpeg",
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentIndex((prev) => (prev + 1) % galleryImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
+  };
+
   return (
     <DefaultLayout>
       <section id="home" className="bg-gradient-to-b from-blue-50 to-white py-16">
@@ -25,7 +42,7 @@ const Home = () => {
           <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
             <div className="text-center mb-8">
               <img
-                src="/assets/images/worship-night-church-event-poster_orig.png"
+                src="/assets/images/gemini.png"
                 alt="Canonisation Event"
                 className="mx-auto mb-6 rounded-lg max-w-md"
               />
@@ -64,7 +81,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
               >
-                Get your event tickets here for the canonisation live stream
+                TICKETS HERE
               </a>
             </div>
           </div>
@@ -89,7 +106,7 @@ const Home = () => {
                 Interested in finding out more about a relic visit for your parish?
               </p>
               <Link to="/relic" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
-                Find out more here
+                LEARN MORE
               </Link>
             </div>
             {/* Resources & Outreach */}
@@ -105,7 +122,7 @@ const Home = () => {
                 We have a number of resources and supports to help.
               </p>
               <Link to="/resources" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
-                FIND OUT MORE HERE
+                LEARN MORE
               </Link>
             </div>
             <div className="text-center">
@@ -120,7 +137,7 @@ const Home = () => {
                 We also organise outreach events as part of our Carlo Acutis Youth Ireland.
               </p>
               <Link to="/schools" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
-                FIND OUT MORE HERE
+                LEARN MORE
               </Link>
             </div>
           </div>
@@ -153,31 +170,40 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Photo Gallery */}
+      {/* Photo Gallery Slider */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
-          <img
-            src="/assets/images/whatsapp-image-2024-08-27-at-14-59-49.jpeg"
-            alt="Carlo Acutis Event"
-            className="w-full max-w-2xl mx-auto rounded-lg mb-8"
-          />
-          <hr className="border-2 border-gray-300 mb-8" />
-          <div className="grid md:grid-cols-3 gap-6">
+          <h2 className="text-3xl font-bold text-center mb-8">Carlo Acutis Event Gallery</h2>
+          <div className="relative flex items-center justify-center">
+            <button
+              onClick={prevSlide}
+              className="absolute left-0 z-10 bg-gray-200 hover:bg-gray-300 rounded-full p-2 shadow"
+              aria-label="Previous"
+            >
+              &#8592;
+            </button>
             <img
-              src="/assets/images/carlo-mother.jpg"
-              alt="Carlo with Mother"
-              className="w-full h-64 object-cover rounded-lg"
+              src={galleryImages[currentIndex]}
+              alt={`Carlo Event ${currentIndex + 1}`}
+              className="w-full h-64 object-cover rounded-lg transition-all duration-500 max-w-md"
             />
-            <img
-              src="/assets/images/img-2260_1.jpeg"
-              alt="Carlo Event"
-              className="w-full h-64 object-cover rounded-lg"
-            />
-            <img
-              src="/assets/images/dsc-0108_1.jpeg"
-              alt="Carlo Event"
-              className="w-full h-64 object-cover rounded-lg"
-            />
+            <button
+              onClick={nextSlide}
+              className="absolute right-0 z-10 bg-gray-200 hover:bg-gray-300 rounded-full p-2 shadow"
+              aria-label="Next"
+            >
+              &#8594;
+            </button>
+          </div>
+          <div className="flex justify-center mt-4 space-x-2">
+            {galleryImages.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentIndex(idx)}
+                className={`w-3 h-3 rounded-full ${idx === currentIndex ? 'bg-blue-600' : 'bg-gray-300'}`}
+                aria-label={`Go to slide ${idx + 1}`}
+              />
+            ))}
           </div>
         </div>
       </section>
