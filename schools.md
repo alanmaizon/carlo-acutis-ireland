@@ -35,29 +35,7 @@ title: Schools & Workshops
           Application form
         </a>
       </div>
-    </section>
-    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-      <div class="flex flex-col items-center">
-        <img src="/assets/images/carlo-acutis-ireland-logo_1.jpg" alt="Logo" class="mb-4 max-w-xs">
-        <div class="text-lg text-center">
-          <strong>National Director of Carlo Acutis Ireland</strong><br>
-          Mary Ong,<br>
-          +44 7300 866 444<br>
-          info@carloacutisireland.org<br>
-          Based in Belfast
-        </div>
-      </div>
-      <div class="flex flex-col items-center">
-        <img src="/assets/images/mary-eucharist_1.png" alt="Mary Eucharist" class="mb-4 max-w-xs">
-        <div class="text-lg text-center">
-          <strong>Directors of Carlo Acutis Youth Ireland</strong><br>
-          Mary-Aoife and Séamus Ong,<br>
-          +353 83 416 6687<br>
-          youth@carloacutisireland.org<br>
-          Based in Dublin
-        </div>
-      </div>
-    </section>
   </main>
+  {% include contact.html %}
 </body>
 
