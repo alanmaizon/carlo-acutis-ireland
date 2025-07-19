@@ -6,10 +6,9 @@ const Youth = () => {
     <DefaultLayout>
       {/* Hero Section */}
       <div
-        className="relative h-[500px] bg-cover bg-center flex items-center justify-center text-white"
-        style={{ backgroundImage: "url('/assets/images/whatsapp-image-2024-06-29-at-17-41-41.jpeg')" }}
-      >
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+        className="relative h-[500px] flex items-center justify-center text-white bg-gradient-to-r from-blue-700 via-blue-500 to-blue-400"
+        style={{ backgroundBlendMode: "multiply", backgroundSize: "cover", backgroundPosition: "center" }}>
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <h1 className="text-5xl font-bold italic mb-6">
             If everyone became like Carlo, the world would be a wonderful place!

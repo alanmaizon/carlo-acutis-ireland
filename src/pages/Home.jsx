@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import DefaultLayout from '../layouts/DefaultLayout';
 
 
@@ -34,7 +35,7 @@ const Home = () => {
             </h3>
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
-                <p className="mb-2"><strong>DATE:</strong> 27th April 2025</p>
+                <p className="mb-2"><strong>DATE:</strong> September 7, 2025</p>
                 <p><strong>LOCATION:</strong> Phoenix Park, Archdiocese of Dublin, Cityquay Parish</p>
               </div>
             </div>
@@ -87,9 +88,9 @@ const Home = () => {
                 In the past year, the primary relic of Carlo Acutis has made a number of visits to dioceses in Ireland from Assisi.
                 Interested in finding out more about a relic visit for your parish?
               </p>
-              <a href="/relic" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
+              <Link to="/relic" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
                 Find out more here
-              </a>
+              </Link>
             </div>
             {/* Resources & Outreach */}
             <div className="text-center">
@@ -103,9 +104,9 @@ const Home = () => {
                 We want to support others to spread awareness of Carlo Acutis in their parish and everyday life.
                 We have a number of resources and supports to help.
               </p>
-              <a href="/resources" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
+              <Link to="/resources" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
                 FIND OUT MORE HERE
-              </a>
+              </Link>
             </div>
             <div className="text-center">
               <img
@@ -118,9 +119,9 @@ const Home = () => {
                 Want to organise a Carlo Acutis workshop in your school or parish? We are more than happy to help.
                 We also organise outreach events as part of our Carlo Acutis Youth Ireland.
               </p>
-              <a href="/schools" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
+              <Link to="/schools" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
                 FIND OUT MORE HERE
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -148,15 +149,6 @@ const Home = () => {
                 title="Carlo Acutis Video 2"
               ></iframe>
             </div>
-          </div>
-          <div className="aspect-video max-w-4xl mx-auto">
-            <iframe
-              className="w-full h-full rounded-lg"
-              src="https://www.youtube.com/embed/DDkelBOase0"
-              frameBorder="0"
-              allowFullScreen
-              title="Carlo Acutis Video 3"
-            ></iframe>
           </div>
         </div>
       </section>

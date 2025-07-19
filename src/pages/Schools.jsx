@@ -6,7 +6,6 @@ const Schools = () => {
     <DefaultLayout>
       <section
         className="bg-cover bg-no-repeat bg-center min-h-screen py-16"
-        style={{ backgroundImage: "url('/assets/images/1366250879.jpg')" }}
       >
         <div className="container mx-auto py-12 px-4">
           <section className="mb-8 flex flex-col md:flex-row md:items-center md:justify-between">
