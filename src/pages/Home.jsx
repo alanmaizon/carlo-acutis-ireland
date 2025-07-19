@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import DefaultLayout from '../layouts/DefaultLayout';
 
@@ -13,13 +13,13 @@ const Home = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % galleryImages.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + galleryImages.length) % galleryImages.length);
-  };
+  // Automatically advance the slide every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % galleryImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [galleryImages.length]);
 
   return (
     <DefaultLayout>
@@ -37,7 +37,13 @@ const Home = () => {
           <h2 className="text-2xl md:text-3xl text-center text-gray-700 mb-12 leading-relaxed">
             We are a small group of families who have been deeply moved and inspired by the life of Carlo Acutis. Working directly with the Archbishop of Assisi and Bishops of Ireland, we want to share Carlo's story with as many people as we can!
           </h2>
-
+          <img
+            src="/assets/images/whatsapp-image-2024-08-27-at-14-59-49.jpeg"
+            alt="Carlo Acutis Event"
+            className="w-full max-w-2xl mx-auto rounded-lg mb-8"
+          />
+          <hr className="border-2 border-gray-300 mb-8" />
+          
           {/* Canonisation Event Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
             <div className="text-center mb-8">
@@ -175,25 +181,12 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Carlo Acutis Event Gallery</h2>
           <div className="relative flex items-center justify-center">
-            <button
-              onClick={prevSlide}
-              className="absolute left-0 z-10 bg-gray-200 hover:bg-gray-300 rounded-full p-2 shadow"
-              aria-label="Previous"
-            >
-              &#8592;
-            </button>
+            {/* Remove the previous/next buttons for auto slide */}
             <img
               src={galleryImages[currentIndex]}
               alt={`Carlo Event ${currentIndex + 1}`}
               className="w-full h-64 object-cover rounded-lg transition-all duration-500 max-w-md"
             />
-            <button
-              onClick={nextSlide}
-              className="absolute right-0 z-10 bg-gray-200 hover:bg-gray-300 rounded-full p-2 shadow"
-              aria-label="Next"
-            >
-              &#8594;
-            </button>
           </div>
           <div className="flex justify-center mt-4 space-x-2">
             {galleryImages.map((_, idx) => (
