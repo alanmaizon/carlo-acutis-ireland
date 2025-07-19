@@ -47,11 +47,11 @@ const Home = () => {
           {/* Canonisation Event Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-12">
             <div className="text-center mb-8">
-              <img
-                src="/assets/images/gemini.png"
-                alt="Canonisation Event"
-                className="mx-auto mb-6 rounded-lg max-w-md"
-              />
+            <img
+              src="/assets/images/gemini.png"
+              alt="Canonisation Event"
+              className="mx-auto mb-6 rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md h-auto"
+            />
             </div>
             <h3 className="text-2xl font-bold text-center mb-6 text-blue-800 underline">
               Join us Carlo Acutis Canonisation Celebrations in Dublin
