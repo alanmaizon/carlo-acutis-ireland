@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // Add this import
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,29 +19,43 @@ const Header = () => {
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex justify-center space-x-12 pb-8 border-t border-stone-200 pt-6">
-          <a href="/" className="text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
-            HOME
-          </a>
-          <a href="/about" className="text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
-            ABOUT
-          </a>
-          <a href="/youth" className="text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
-            YOUTH
-          </a>
-          <a href="/resources" className="text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
-            RESOURCES/OUTREACH
-          </a>
-          <a href="/relic" className="text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
-            RELIC VISIT
-          </a>
-          <a href="/schools" className="text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
-            SCHOOLS/WORKSHOPS
-          </a>
-          <a href="/shop" className="text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
-            SHOP
-          </a>
-        </div>
+        <ul className="hidden md:flex justify-center space-x-12 pb-8 border-t border-stone-200 pt-6">
+          <li className="nav-item">
+            <Link to="/" className="nav-link text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
+              HOME
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about" className="nav-link text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
+              ABOUT
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/youth" className="nav-link text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
+              YOUTH
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/resources" className="nav-link text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
+              RESOURCES/OUTREACH
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/relic" className="nav-link text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
+              RELIC VISIT
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/schools" className="nav-link text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
+              SCHOOLS/WORKSHOPS
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/shop" className="nav-link text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider transition-colors duration-200">
+              SHOP
+            </Link>
+          </li>
+        </ul>
 
         {/* Mobile Header with Title and Menu Button */}
         <div className="md:hidden flex justify-between items-center py-4">
@@ -61,27 +76,27 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden pb-6 border-t border-stone-200 pt-6">
-            <a href="/" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
+            <Link to="/" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
               HOME
-            </a>
-            <a href="/about" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
+            </Link>
+            <Link to="/about" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
               ABOUT
-            </a>
-            <a href="/youth" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
+            </Link>
+            <Link to="/youth" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
               YOUTH
-            </a>
-            <a href="/resources" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
+            </Link>
+            <Link to="/resources" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
               RESOURCES/OUTREACH
-            </a>
-            <a href="/relic" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
+            </Link>
+            <Link to="/relic" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
               RELIC VISIT
-            </a>
-            <a href="/schools" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
+            </Link>
+            <Link to="/schools" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
               SCHOOLS/WORKSHOPS
-            </a>
-            <a href="/shop" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
+            </Link>
+            <Link to="/shop" className="block py-3 text-stone-600 hover:text-stone-800 font-light text-sm uppercase tracking-wider">
               SHOP
-            </a>
+            </Link>
           </div>
         )}
       </div>
