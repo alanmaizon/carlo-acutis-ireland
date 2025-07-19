@@ -1,7 +1,7 @@
 title: Carlo Acutis Ireland
 description: National representation of Carlo Acutis in Ireland
-baseurl: ""
-url: ""
+baseurl: "/carlo-acutis-ireland"
+url: "https://alanmaizon.github.io/carlo-acutis-ireland/"
 theme: minima
 plugins:
   - jekyll-feed
