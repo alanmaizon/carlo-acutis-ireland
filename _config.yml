@@ -1,0 +1,7 @@
+title: Carlo Acutis Ireland
+description: National representation of Carlo Acutis in Ireland
+baseurl: ""
+url: ""
+theme: minima
+plugins:
+  - jekyll-feed
