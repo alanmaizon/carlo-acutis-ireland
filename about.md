@@ -66,7 +66,7 @@ title: About
 </section>
 
 <!-- Quotes Section -->
-<section class="bg-cover bg-center py-12" style="background-image: url('/uploads/1/2/2/5/122563310/background-images/332865935.jpg');">
+<section class="bg-cover bg-center py-12" style="background-image: url('../assets/images/332865935.jpg');">
   <div class="container mx-auto px-4">
     <blockquote class="bg-black bg-opacity-60 rounded-lg p-8 text-white max-w-2xl mx-auto text-lg font-serif">
       <p class="mb-4 font-bold text-xl">“There are people who suffer much more than me.”</p>
