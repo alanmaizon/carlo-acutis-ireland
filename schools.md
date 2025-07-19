@@ -36,6 +36,5 @@ title: Schools & Workshops
         </a>
       </div>
   </main>
-  {% include contact.html %}
 </body>
-
+{% include contact.html %}
