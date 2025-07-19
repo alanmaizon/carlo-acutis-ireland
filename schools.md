@@ -3,7 +3,7 @@ layout: default
 title: Schools & Workshops
 ---
 
-<body class="bg-cover bg-no-repeat bg-center min-h-screen" style="background-image: url('../assets/images/1366250879.jpg');">
+<body class="bg-cover bg-no-repeat bg-center min-h-screen" style="background-image: url('/assets/images/1366250879.jpg');">
   <main class="container mx-auto py-12 px-4">
     <section class="mb-8 flex flex-col md:flex-row md:items-center md:justify-between">
       <div class="md:w-2/3">
@@ -23,7 +23,7 @@ title: Schools & Workshops
         </ul>
       </div>
       <div class="md:w-1/3 flex justify-center mt-6 md:mt-0">
-        <img src="../assets/images/whatsapp-image-2024-06-22-at-12-28-25.jpeg" alt="Workshop" class="rounded shadow-lg max-w-xs border border-gray-200">
+        <img src="/assets/images/whatsapp-image-2024-06-22-at-12-28-25.jpeg" alt="Workshop" class="rounded shadow-lg max-w-xs border border-gray-200">
       </div>
     </section>
     <section class="mb-12">
@@ -38,7 +38,7 @@ title: Schools & Workshops
     </section>
     <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
       <div class="flex flex-col items-center">
-        <img src="../assets/images/carlo-acutis-ireland-logo_1.jpg" alt="Logo" class="mb-4 max-w-xs">
+        <img src="/assets/images/carlo-acutis-ireland-logo_1.jpg" alt="Logo" class="mb-4 max-w-xs">
         <div class="text-lg text-center">
           <strong>National Director of Carlo Acutis Ireland</strong><br>
           Mary Ong,<br>
@@ -48,7 +48,7 @@ title: Schools & Workshops
         </div>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../assets/images/mary-eucharist_1.png" alt="Mary Eucharist" class="mb-4 max-w-xs">
+        <img src="/assets/images/mary-eucharist_1.png" alt="Mary Eucharist" class="mb-4 max-w-xs">
         <div class="text-lg text-center">
           <strong>Directors of Carlo Acutis Youth Ireland</strong><br>
           Mary-Aoife and Séamus Ong,<br>

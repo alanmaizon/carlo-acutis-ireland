@@ -22,7 +22,7 @@ title: Resources & Outreach
   <section class="bg-white rounded-lg p-8 mb-8">
     <h2 class="text-3xl font-bold text-center mb-4">Pray to Blessed Carlo</h2>
     <div class="flex flex-col md:flex-row items-center md:justify-center mb-6">
-      <img src="../assets/images/831936928.jpg" alt="Carlo Acutis" class="w-full md:w-1/3 rounded shadow-md mb-4 md:mb-0 md:mr-8">
+      <img src="/assets/images/831936928.jpg" alt="Carlo Acutis" class="w-full md:w-1/3 rounded shadow-md mb-4 md:mb-0 md:mr-8">
       <div class="text-gray-700 text-lg leading-relaxed">
         <strong>OFFICIAL CARLO ACUTIS PRAYER</strong><br>
         O God our Father,<br>
@@ -67,8 +67,8 @@ title: Resources & Outreach
         <iframe class="w-full h-64 rounded shadow-md" src="https://www.youtube.com/embed/Umu07OkaBNA" allowfullscreen></iframe>
       </div>
       <div class="flex-1 flex flex-col items-center justify-center">
-        <a href="/uploads/1/2/2/5/122563310/pdf.pdf" target="_blank" class="bg-green-700 text-white px-6 py-3 rounded shadow hover:bg-green-800 font-bold mb-4">DOWNLOAD HERE</a>
-        <embed src="/uploads/1/2/2/5/122563310/pdf.pdf" type="application/pdf" class="w-full h-96 rounded shadow-md" />
+        <a href="/assets/images/pdf.pdf" target="_blank" class="bg-green-700 text-white px-6 py-3 rounded shadow hover:bg-green-800 font-bold mb-4">DOWNLOAD HERE</a>
+        <embed src="..assets/images/pdf.pdf" type="application/pdf" class="w-full h-96 rounded shadow-md" />
       </div>
     </div>
   </section>
@@ -76,9 +76,9 @@ title: Resources & Outreach
   <!-- Gallery Section -->
   <section class="bg-white rounded-lg p-8 mb-8">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <img src="../assets/images/whatsapp-image-2024-06-24-at-16-18-12.jpeg" alt="Gallery 1" class="rounded shadow-md w-full">
-      <img src="../assets/images/whatsapp-image-2025-02-15-at-15-11-52.jpeg" alt="Gallery 2" class="rounded shadow-md w-full">
-      <img src="../assets/images/whatsapp-image-2024-04-16-at-11-15-06.jpeg" alt="Gallery 3" class="rounded shadow-md w-full">
+      <img src="/assets/images/whatsapp-image-2024-06-24-at-16-18-12.jpeg" alt="Gallery 1" class="rounded shadow-md w-full">
+      <img src="/assets/images/whatsapp-image-2025-02-15-at-15-11-52.jpeg" alt="Gallery 2" class="rounded shadow-md w-full">
+      <img src="/assets/images/whatsapp-image-2024-04-16-at-11-15-06.jpeg" alt="Gallery 3" class="rounded shadow-md w-full">
     </div>
   </section>
 
@@ -96,7 +96,7 @@ title: Resources & Outreach
     <h2 class="text-3xl font-bold text-center mb-8">Lets Connect - Get in touch with us!</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
       <div class="flex flex-col items-center">
-        <img src="../assets/images/carlo-acutis-ireland-logo_3.jpg" alt="National Director" class="rounded shadow-md w-2/3 mb-4">
+        <img src="/assets/images/carlo-acutis-ireland-logo_3.jpg" alt="National Director" class="rounded shadow-md w-2/3 mb-4">
         <div class="text-center text-gray-800">
           <strong>National Director of Carlo Acutis Ireland</strong><br>
           Mary Ong,<br>
@@ -106,7 +106,7 @@ title: Resources & Outreach
         </div>
       </div>
       <div class="flex flex-col items-center">
-        <img src="../assets/images/mary-eucharist_4.png" alt="Youth Directors" class="rounded shadow-md w-2/3 mb-4">
+        <img src="/assets/images/mary-eucharist_4.png" alt="Youth Directors" class="rounded shadow-md w-2/3 mb-4">
         <div class="text-center text-gray-800">
           <strong>Directors of Carlo Acutis Youth Ireland</strong><br>
           Mary-Aoife and Séamus Ong,<br>
