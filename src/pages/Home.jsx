@@ -1,6 +1,7 @@
 import React from 'react';
 import DefaultLayout from '../layouts/DefaultLayout';
 
+
 const Home = () => {
   return (
     <DefaultLayout>
@@ -86,7 +87,7 @@ const Home = () => {
                 In the past year, the primary relic of Carlo Acutis has made a number of visits to dioceses in Ireland from Assisi.
                 Interested in finding out more about a relic visit for your parish?
               </p>
-              <a href="#relic" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
+              <a href="/relic" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
                 Find out more here
               </a>
             </div>
@@ -102,11 +103,10 @@ const Home = () => {
                 We want to support others to spread awareness of Carlo Acutis in their parish and everyday life.
                 We have a number of resources and supports to help.
               </p>
-              <a href="#resources" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
+              <a href="/resources" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
                 FIND OUT MORE HERE
               </a>
-            </div>
-            {/* School Visits & Workshops */}
+            </div>}
             <div className="text-center">
               <img
                 src="/assets/images/lithuanian-friends.jpg"
@@ -118,7 +118,7 @@ const Home = () => {
                 Want to organise a Carlo Acutis workshop in your school or parish? We are more than happy to help.
                 We also organise outreach events as part of our Carlo Acutis Youth Ireland.
               </p>
-              <a href="#schools" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
+              <a href="/schools" className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition-colors">
                 FIND OUT MORE HERE
               </a>
             </div>
