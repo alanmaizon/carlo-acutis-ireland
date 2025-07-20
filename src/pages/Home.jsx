@@ -49,12 +49,12 @@ const Home = () => {
             <div className="text-center mb-8">
             <img
               src="/assets/images/gemini.png"
-              alt="Canonisation Event"
+              alt="Canonization Event"
               className="mx-auto mb-6 rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md h-auto"
             />
             </div>
             <h3 className="text-2xl font-bold text-center mb-6 text-blue-800 underline">
-              Join us Carlo Acutis Canonisation Celebrations in Dublin
+              Join us Carlo Acutis Canonization Celebrations in Dublin
             </h3>
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
@@ -71,7 +71,7 @@ const Home = () => {
                 <p><strong>7AM - 9AM Pilgrim Walk</strong> from the Papal Cross (Phoenix Park) to St. Paul's Church, Arran Quay, Dublin (Archdiocese of Dublin) - <em>ALL WELCOME</em></p>
               </div>
               <div className="border-l-4 border-green-500 pl-4">
-                <p><strong>9AM - 11AM Canonisation Event</strong> at St. Paul's Church, Archdiocese of Dublin Including live-stream of the Canonisation in Rome - <em>Ticketed Event Only - Limited Tickets Available</em></p>
+                <p><strong>9AM - 11AM Canonization Event</strong> at St. Paul's Church, Archdiocese of Dublin Including live-stream of the Canonization in Rome - <em>Ticketed Event Only - Limited Tickets Available</em></p>
               </div>
               <div className="border-l-4 border-purple-500 pl-4">
                 <p><strong>11AM-1PM Celebrations in St. Paul's Church, Arran Quay, Dublin</strong> Live Music, Testimonies, Blessings, Eucharistic Miracles Exhibition, Refreshments, Carlo Acutis Official Song - <em>ALL WELCOME</em></p>
