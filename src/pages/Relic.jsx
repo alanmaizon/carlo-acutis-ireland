@@ -41,7 +41,7 @@ const Relic = () => {
           <div className="mb-16">
             <h2 className="text-3xl font-bold text-center mb-6">Upcoming Events</h2>
             <p className="text-center text-xl">
-              September 7, 2025. Offical Carlo Acutis Ireland Canonisation celebration in Dublin
+              September 7, 2025. Offical Carlo Acutis Ireland Canonization celebration in Dublin
             </p>
           </div>
         </div>

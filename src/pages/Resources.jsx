@@ -38,7 +38,7 @@ const Resources = () => {
                 <h2 className="text-3xl font-bold text-center mb-4">Music Ministry</h2>
                 <hr className="border-gray-400 my-4 w-1/2 mx-auto" />
                 <p className="text-lg mb-6">
-                    We are delighted to announce that John Emmanuel has released Carlo Acutis and the Living Bread, a powerful tribute to Blessed Carlo Acutis, who will be canonized on April 27, 2025. The song, now available on all major streaming platforms, has been hailed as the official tribute to Carlo Acutis in Ireland and the UK, inspiring listeners with its profound message about the Eucharist and Carlo’s unwavering faith. The song has touched many hearts across Ireland and was performed throughout the relic tours leaving a lasting impact on those who hear it. The song was also performed by John Emmanuel on Carlo Acutis’ feast day in Assisi, where it received approval from Carlo’s mother, Antonia Salzano.
+                    We are delighted to announce that John Emmanuel has released Carlo Acutis and the Living Bread, a powerful tribute to Blessed Carlo Acutis, who will be canonized on September 7, 2025. The song, now available on all major streaming platforms, has been hailed as the official tribute to Carlo Acutis in Ireland and the UK, inspiring listeners with its profound message about the Eucharist and Carlo’s unwavering faith. The song has touched many hearts across Ireland and was performed throughout the relic tours leaving a lasting impact on those who hear it. The song was also performed by John Emmanuel on Carlo Acutis’ feast day in Assisi, where it received approval from Carlo’s mother, Antonia Salzano.
                     <br /><br />
                     To encourage young people to learn about Carlo Acutis’ story and devotion to the Eucharist, free sheet music for Carlo Acutis and the Living Bread is available for schools, parishes, and pupils in the lead-up to his canonisation on April 27, 2025. John Emmanuel says “I hope young people will connect with Carlo’s story and recognize that their lives have great purpose. Like Carlo, they can use their gifts—even technology—to bring people closer to Jesus.”
                     <br /><br />
@@ -48,14 +48,10 @@ const Resources = () => {
                     {' '}or{' '}
                     <a href="https://music.apple.com/gb/album/carlo-acutis-and-the-living-bread-single/1793840301" target="_blank" rel="noopener noreferrer" className="underline text-green-200">iTunes</a>.
                 </p>
-                <div className="flex flex-col md:flex-row gap-8">
-                    <div className="flex-1 flex flex-col gap-4">
-                        <iframe className="w-full h-64 rounded shadow-md" src="https://www.youtube.com/embed/jTpXatw6QWQ" allowFullScreen title="Carlo Acutis Song 1"></iframe>
-                        <iframe className="w-full h-64 rounded shadow-md" src="https://www.youtube.com/embed/Umu07OkaBNA" allowFullScreen title="Carlo Acutis Song 2"></iframe>
-                    </div>
-                    <div className="flex-1 flex flex-col items-center justify-center">
-                        <a href="/assets/images/pdf.pdf" target="_blank" className="bg-green-700 text-white px-6 py-3 rounded shadow hover:bg-green-800 font-bold mb-4">DOWNLOAD HERE</a>
-                        <embed src="/assets/images/pdf.pdf" type="application/pdf" className="w-full h-96 rounded shadow-md" />
+                <div classname="flex-1 flex flex-col items-center justify-center">
+                    <a href="/assets/images/pdf.pdf" target="_blank" class="bg-green-700 text-white px-6 py-3 rounded shadow hover:bg-green-800 font-bold mb-4">DOWNLOAD HERE</a>
+                    <div class="w-full h-96 rounded shadow-md bg-white">
+                        <embed src="/assets/images/pdf.pdf" type="application/pdf" class="w-full h-full" />
                     </div>
                 </div>
             </section>

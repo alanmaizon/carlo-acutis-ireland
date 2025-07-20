@@ -49,12 +49,12 @@ const Home = () => {
             <div className="text-center mb-8">
             <img
               src="/assets/images/gemini.png"
-              alt="Canonisation Event"
+              alt="Canonization Event"
               className="mx-auto mb-6 rounded-lg w-full max-w-xs sm:max-w-sm md:max-w-md h-auto"
             />
             </div>
             <h3 className="text-2xl font-bold text-center mb-6 text-blue-800 underline">
-              Join us Carlo Acutis Canonisation Celebrations in Dublin
+              Join us Carlo Acutis Canonization Celebrations in Dublin
             </h3>
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
@@ -71,7 +71,7 @@ const Home = () => {
                 <p><strong>7AM - 9AM Pilgrim Walk</strong> from the Papal Cross (Phoenix Park) to St. Paul's Church, Arran Quay, Dublin (Archdiocese of Dublin) - <em>ALL WELCOME</em></p>
               </div>
               <div className="border-l-4 border-green-500 pl-4">
-                <p><strong>9AM - 11AM Canonisation Event</strong> at St. Paul's Church, Archdiocese of Dublin Including live-stream of the Canonisation in Rome - <em>Ticketed Event Only - Limited Tickets Available</em></p>
+                <p><strong>9AM - 11AM Canonization Event</strong> at St. Paul's Church, Archdiocese of Dublin Including live-stream of the Canonization in Rome - <em>Ticketed Event Only - Limited Tickets Available</em></p>
               </div>
               <div className="border-l-4 border-purple-500 pl-4">
                 <p><strong>11AM-1PM Celebrations in St. Paul's Church, Arran Quay, Dublin</strong> Live Music, Testimonies, Blessings, Eucharistic Miracles Exhibition, Refreshments, Carlo Acutis Official Song - <em>ALL WELCOME</em></p>
@@ -175,17 +175,69 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* Prayer Request Form Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-6">Have a prayer request for Carlo Acutis?</h2>
+          <p className="text-center text-lg text-gray-700 mb-8">
+            Submit it here to be prayed for with the relic of Carlo.
+          </p>
 
+          <form className="bg-white shadow-md rounded-lg p-6 space-y-6">
+            {/* Comment Field */}
+            <div>
+              <label htmlFor="comment" className="block text-gray-800 font-semibold mb-2">
+                Comment <span className="text-red-600">*</span>
+              </label>
+              <textarea
+                id="comment"
+                name="comment"
+                required
+                rows="4"
+                className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                placeholder="Enter your prayer request here..."
+              ></textarea>
+            </div>
+
+            {/* Email Field */}
+            <div>
+              <label htmlFor="email" className="block text-gray-800 font-semibold mb-2">
+                Email <span className="text-red-600">*</span>
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="you@example.com"
+              />
+              <p className="text-sm text-gray-600 mt-2">
+                If you would like to receive newsletters on Carlo Acutis Ireland and information about events, relic visits, and pilgrimages to Assisi, include your email address here.
+              </p>
+            </div>
+
+            {/* Submit Button */}
+            <div className="text-center">
+              <button
+                type="submit"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+              >
+                Submit Prayer Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
       {/* Photo Gallery Slider */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Carlo Acutis Event Gallery</h2>
           <div className="relative flex items-center justify-center">
-            {/* Remove the previous/next buttons for auto slide */}
             <img
               src={galleryImages[currentIndex]}
               alt={`Carlo Event ${currentIndex + 1}`}
-              className="w-full h-64 object-cover rounded-lg transition-all duration-500 max-w-md"
+              className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg transition-all duration-500 max-w-full"
             />
           </div>
           <div className="flex justify-center mt-4 space-x-2">
@@ -193,7 +245,9 @@ const Home = () => {
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`w-3 h-3 rounded-full ${idx === currentIndex ? 'bg-blue-600' : 'bg-gray-300'}`}
+                className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-colors duration-300 ${
+                  idx === currentIndex ? 'bg-blue-600' : 'bg-gray-300'
+                }`}
                 aria-label={`Go to slide ${idx + 1}`}
               />
             ))}
