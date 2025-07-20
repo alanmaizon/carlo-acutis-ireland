@@ -4,10 +4,14 @@ import DefaultLayout from '../layouts/DefaultLayout';
 const Schools = () => {
   return (
     <DefaultLayout>
+      
       <section
-        className="bg-cover bg-no-repeat bg-center min-h-screen py-16"
-      >
+        className="bg-cover bg-no-repeat bg-center min-h-screen py-16">
+                          <h2 className="text-3xl font-light text-stone-700 tracking-wide text-center mb-4">WORKSHOPS ABOUT CARLO</h2>
+                <div className="w-24 h-px bg-stone-300 mx-auto mb-12"></div>
         <div className="container mx-auto py-12 px-4">
+          
+
           <section className="mb-8 flex flex-col md:flex-row md:items-center md:justify-between">
             <div className="md:w-2/3">
               <h2 className="text-3xl font-bold text-gray-800 text-center mb-6">

@@ -5,8 +5,9 @@ const Resources = () => {
     return (
         <DefaultLayout>
             {/* Prayer Section */}
-            <section className="bg-white rounded-lg p-8 mb-8">
-                <h2 className="text-3xl font-bold text-center mb-4">Pray to Blessed Carlo</h2>
+            <section className="bg-cover bg-no-repeat bg-center min-h-screen py-16">
+                <h2 className="text-3xl font-light text-stone-700 tracking-wide text-center mb-4">PRAY TO BLESSED CARLO</h2>
+                <div className="w-24 h-px bg-stone-300 mx-auto mb-12"></div>
                 <div className="flex flex-col md:flex-row items-center md:justify-center mb-6">
                     <img src="/assets/images/831936928.jpg" alt="Carlo Acutis" className="w-full md:w-1/3 rounded shadow-md mb-4 md:mb-0 md:mr-8" />
                     <div className="text-gray-700 text-lg leading-relaxed">

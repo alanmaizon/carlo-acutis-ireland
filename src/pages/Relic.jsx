@@ -4,14 +4,9 @@ import DefaultLayout from '../layouts/DefaultLayout';
 const Relic = () => {
   return (
     <DefaultLayout>
-      <section className="bg-white">
-        <div
-          className="relative h-72 bg-center bg-cover mb-8">
-          <div className="absolute inset-0 bg-gradient-to-r from-indigo-900 via-indigo-600 to-indigo-400 opacity-80"></div>
-          <div className="relative h-full flex items-center justify-center">
-            <h1 className="text-5xl font-bold text-white">Relic Visits</h1>
-          </div>
-        </div>
+      <section className="bg-cover bg-no-repeat bg-center min-h-screen py-16">
+        <h2 className="text-3xl font-light text-stone-700 tracking-wide text-center mb-4">RELIC VISITS</h2>
+        <div className="w-24 h-px bg-stone-300 mx-auto mb-12"></div>
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
             <p className="text-2xl font-semibold text-gray-900">
