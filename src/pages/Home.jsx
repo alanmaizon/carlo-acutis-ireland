@@ -181,11 +181,10 @@ const Home = () => {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-8">Carlo Acutis Event Gallery</h2>
           <div className="relative flex items-center justify-center">
-            {/* Remove the previous/next buttons for auto slide */}
             <img
               src={galleryImages[currentIndex]}
               alt={`Carlo Event ${currentIndex + 1}`}
-              className="w-full h-64 object-cover rounded-lg transition-all duration-500 max-w-md"
+              className="w-full h-64 sm:h-80 md:h-96 object-cover rounded-lg transition-all duration-500 max-w-full"
             />
           </div>
           <div className="flex justify-center mt-4 space-x-2">
@@ -193,7 +192,9 @@ const Home = () => {
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`w-3 h-3 rounded-full ${idx === currentIndex ? 'bg-blue-600' : 'bg-gray-300'}`}
+                className={`w-3 h-3 md:w-4 md:h-4 rounded-full transition-colors duration-300 ${
+                  idx === currentIndex ? 'bg-blue-600' : 'bg-gray-300'
+                }`}
                 aria-label={`Go to slide ${idx + 1}`}
               />
             ))}
