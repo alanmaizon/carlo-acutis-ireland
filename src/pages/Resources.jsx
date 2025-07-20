@@ -47,14 +47,10 @@ const Resources = () => {
                     {' '}or{' '}
                     <a href="https://music.apple.com/gb/album/carlo-acutis-and-the-living-bread-single/1793840301" target="_blank" rel="noopener noreferrer" className="underline text-green-200">iTunes</a>.
                 </p>
-                <div className="flex flex-col md:flex-row gap-8">
-                    <div className="flex-1 flex flex-col gap-4">
-                        <iframe className="w-full h-64 rounded shadow-md" src="https://www.youtube.com/embed/jTpXatw6QWQ" allowFullScreen title="Carlo Acutis Song 1"></iframe>
-                        <iframe className="w-full h-64 rounded shadow-md" src="https://www.youtube.com/embed/Umu07OkaBNA" allowFullScreen title="Carlo Acutis Song 2"></iframe>
-                    </div>
-                    <div className="flex-1 flex flex-col items-center justify-center">
-                        <a href="/assets/images/pdf.pdf" target="_blank" className="bg-green-700 text-white px-6 py-3 rounded shadow hover:bg-green-800 font-bold mb-4">DOWNLOAD HERE</a>
-                        <embed src="/assets/images/pdf.pdf" type="application/pdf" className="w-full h-96 rounded shadow-md" />
+                <div classname="flex-1 flex flex-col items-center justify-center">
+                    <a href="/assets/images/pdf.pdf" target="_blank" class="bg-green-700 text-white px-6 py-3 rounded shadow hover:bg-green-800 font-bold mb-4">DOWNLOAD HERE</a>
+                    <div class="w-full h-96 rounded shadow-md bg-white">
+                        <embed src="/assets/images/pdf.pdf" type="application/pdf" class="w-full h-full" />
                     </div>
                 </div>
             </section>
