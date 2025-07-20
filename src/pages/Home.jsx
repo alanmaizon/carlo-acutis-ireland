@@ -175,7 +175,60 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* Prayer Request Form Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-6">Have a prayer request for Carlo Acutis?</h2>
+          <p className="text-center text-lg text-gray-700 mb-8">
+            Submit it here to be prayed for with the relic of Carlo.
+          </p>
 
+          <form className="bg-white shadow-md rounded-lg p-6 space-y-6">
+            {/* Comment Field */}
+            <div>
+              <label htmlFor="comment" className="block text-gray-800 font-semibold mb-2">
+                Comment <span className="text-red-600">*</span>
+              </label>
+              <textarea
+                id="comment"
+                name="comment"
+                required
+                rows="4"
+                className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+                placeholder="Enter your prayer request here..."
+              ></textarea>
+            </div>
+
+            {/* Email Field */}
+            <div>
+              <label htmlFor="email" className="block text-gray-800 font-semibold mb-2">
+                Email <span className="text-red-600">*</span>
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="you@example.com"
+              />
+              <p className="text-sm text-gray-600 mt-2">
+                If you would like to receive newsletters on Carlo Acutis Ireland and information about events, relic visits, and pilgrimages to Assisi, include your email address here.
+              </p>
+            </div>
+
+            {/* Submit Button */}
+            <div className="text-center">
+              <button
+                type="submit"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-colors"
+              >
+                Submit Prayer Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
       {/* Photo Gallery Slider */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4">
